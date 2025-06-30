@@ -2,33 +2,137 @@
 <html>
     <head>
         <meta lang="en" charset="utf-8">
-        <title>Test Page: Don't Panic</title>
+        <title>Travelling Estonia</title>
         <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            h1{
+                font-size: 7vw;
+                margin-top: 0;
+            }
+            a {
+                color: #f00;
+            }
+            .full-hero {
+                background-color: #aaaaaa;
+                height: 50vh;
+            }
+            .social-link {
+                background-color: #c7dbfc;
+                border-radius: 99px;
+                box-sizing: border-box;
+                color: #fff;
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1rem;
+                font-weight: bold;
+                height: 2.5em;
+                line-height: 1;
+                padding-top: 0.80em;
+                text-align: center;
+                text-decoration: none;
+                vertical-align: middle;
+                width: 2.5em;
 
+            }
+            .social-list  {
+                list-style: none;
+                padding: 0;
+                text-align: center;
+            }
+            .social-list > li {
+                display: inline-block;
+                margin: 0 0.5em;
+
+            }
+            /* Bio-styles */
+            .bio-wrapper {
+                font-size: 24px;
+                margin: auto;
+                max-width: 960px;
+                overflow: hidden;
+            }
+            .bio-box {
+                border: 1px solid black;
+                border-color: black black red;
+                box-sizing: border-box;
+                float: left;
+                font-size: 1rem;
+                margin: 40px 1% 0;
+                padding: 0 2% 2%;
+                width: 23%;
+            }
+            .bio-box > h3 {
+                color: #fff;
+                font-size: 1.5em;
+                margin: -40px 0 1em;
+                text-align: center;
+            }
+            .bio-box img {
+                width: 100%;
+                
+            }
         </style>
     </head>
     <body>
-        <h1>I'm an h1</h1>
-        <ul>
-            <li>
-                <a href="https://example.com" style="color: red;">Link</a>
-            </li>
-            <li>
-                <a href="https://example.com" style="color: red;">Link</a>
-            </li>
-            <li>
-                <a href="https://example.com" style="color: red;">Link</a>
-            </li>
-        </ul>
+        <header>
+            <ul class="nav-header">
+                <li>
+                    <a href="https://example.com/">Logo</a>
+                </li>
+                <li>
+                    HOME
+                </li>
+                <li>
+                    About us
+                </li>
+                <li>
+                    News
+                </li>
+            </ul>
+        </header>
+        <div class="full-hero hero-home">
+            <h1>The h1 title</h1>
+            <ul class="social-list">
+                <li>
+                    <a href="https://example.com" class="social-link">Link</a>
+                </li>
+                <li>
+                    <a href="https://example.com" class="social-link">Link</a>
+                </li>
+                <li>
+                    <a href="https://example.com" class="social-link">Link</a>
+                </li>
+            </ul>
+        </div>
+            
         <h2>I'm an h2</h2>
-        <div style="border: 1px solid black";>
-                <a href="https://example.com" style="color: green;">Link</a>
-        </div>
-        <div style="border: 1px solid black";>
-                <a href="https://example.com" style="color: green;">Link</a>
-        </div>
-        <div style="border: 1px solid black";>
-                <a href="https://example.com" style="color: green;">Link</a>
+        <div class="bio-wrapper">
+            <div class="bio-box">
+                <img src="./images/hege.jpg" alt="hege">
+                <h3>Hege Kjorstad</h3>
+                <a href="https://nrk.no" class="social-link">FB</a>
+                <p>
+                    Hege is the leader of the travelling group. Joining years of experience in 
+                    travel and globe trotting makes her leadership one of exquisite fineness. 
+                    Also the leading bord member of the well renowned company TBA, situated in 
+                    the famous metropolitan city of <em>Honefoss, Norway</em>.
+                </p>
+            </div>
+            <div class="bio-box">
+                <img src="./images/thomas.jpg" alt="thomas">
+                <h3>Thomas Bergsund</h3>
+                <a href="https://nrk.no" class="social-link">FB</a>
+                <p>
+                    Being the "black trumpet" in the group, Thomas is the head chief of guidance 
+                    and advanced hair due. He is not a first-timer in Estonia, nor is he unknown 
+                    to the dangers of travelling without shoes - always keeping an extra pair of 
+                    sophisticated sneakers by his side at all times. A great man to have on one's 
+                    side exploring the Baltic area.
+                </p>
+            </div>
         </div>    
     </body>
 </html>
