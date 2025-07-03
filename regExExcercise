@@ -1,0 +1,33 @@
+#!/opt/homebrew/bin/node
+
+const sonnet = `Let me not to the marriage of true minds 
+Admit impediments. Love is not love 
+Wich alters when it alteration finds, 
+Or bends with the remover to remove. 
+O no, it is an ever-fixed mark 
+That looks on tempests and is never shaken; 
+It is the star to every wand'ring bark, 
+Whose worth's unknown, although his height be taken. 
+Love's not time's fool, though rosy lips and cheeks 
+Within his bending sickle's compass come: 
+Lover alters not with his breif hours and weeks, 
+But bears it out even to the edge of doom. 
+    If this be error and not upon me proved, 
+    I never writ, nor no man ever loved.`;
+
+let uniques = new Map(); 
+let regEx = /[\w'-]+/g;
+let words = sonnet.match(regEx); 
+
+words.forEach(word => {
+    if (uniques.get(word)) {
+        let currentValue = uniques.get(word);
+        uniques.set(word, currentValue + 1);
+    } else {
+        uniques.set(word, 1);
+    };
+});
+
+console.log(uniques);
+
+
